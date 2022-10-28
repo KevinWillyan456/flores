@@ -1,0 +1,6 @@
+# Notes
+Minha floricultura
+
+- Existe uma interação JavaScript ao clicar para comprar!
+- Site totalmente Responsivo
+- Se a tela aparecer um pouco "cortada" não é um defeito, e sim porque tem pouco conteúdo para combrir toda a altura da tela do seu dispositivo
