@@ -40,6 +40,7 @@ a {
     width: 100%;
     background-image: linear-gradient(90deg, #ffffa7, #e68517);
     color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 .navbar .navbar-container {
     width: 80%;
@@ -70,9 +71,93 @@ a {
     color: black;
     font-size: 1.2rem;
     cursor: pointer;
-    background-color: rgb(228, 208, 122);
+    background-color: #e4d07a;
     border-radius: 15px;
     padding: 16px;
+    border: 2px solid black;
+}
+
+/* Menu lateral */
+
+.menu-lateral {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+@media (max-width: 800px) {
+    .menu-lateral.active {
+        display: flex;
+    }
+}
+.menu-lateral .menu-lateral-container {
+    min-width: 80%;
+    height: 100vh;
+    background-color: #ffffa7;
+    flex-direction: column;
+    padding: 90px 20px 20px;
+    position: relative;
+}
+.menu-lateral .menu-lateral-container .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #e4d07a;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+    border: 2px solid black;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+}
+.menu-lateral .menu-lateral-container .close div:nth-child(1) {
+    transform: rotate(45deg);
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    border-radius: 5px;
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 0;
+}
+.menu-lateral .menu-lateral-container .close div:nth-child(2) {
+    transform: rotate(-45deg);
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    border-radius: 5px;
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 0;
+}
+.menu-lateral .menu-lateral-container .menu-lateral-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.menu-lateral .menu-lateral-container .menu-lateral-list li {
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #e4d07a;
+    border-radius: 15px;
+    padding: 16px;
+    border: 2px solid black;
+}
+.menu-lateral-over {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* Seção Produto */

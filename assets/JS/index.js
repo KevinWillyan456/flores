@@ -9,3 +9,13 @@ function compra() {
     })
     body.appendChild(ele)
 }
+
+document.querySelector('.open-list').addEventListener('click', () => {
+    document.querySelector('.menu-lateral').classList.add('active')
+})
+document.querySelector('.close').addEventListener('click', () => {
+    document.querySelector('.menu-lateral').classList.remove('active')
+})
+document.querySelector('.menu-lateral-over').addEventListener('click', () => {
+    document.querySelector('.menu-lateral').classList.remove('active')
+})
