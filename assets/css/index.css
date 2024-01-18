@@ -162,6 +162,10 @@ a {
 
 /* Seção Produto */
 
+.over-produto {
+    min-height: calc(100vh - 93px);
+    background-color: rgba(0, 0, 0, 0.3);
+}
 .produto {
     width: 100%;
     min-height: 600px;
@@ -169,10 +173,9 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 100px;
-    background-color: rgba(0, 0, 0, 0.3);
     padding: 120px 80px 40px 80px;
 }
-.produto .conteiner {
+.produto .container {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     display: flex;
@@ -181,7 +184,7 @@ a {
     justify-content: space-between;
     flex-direction: column;
 }
-.produto .conteiner .desc {
+.produto .container .desc {
     background-image: linear-gradient(#1eff3c, #64df64);
     display: flex;
     width: 100%;
@@ -247,8 +250,8 @@ a {
 }
 .buy p {
     color: white;
-    font-size: 3rem;
-    background-color: #218844;
+    font-size: 2rem;
+    background-image: linear-gradient(90deg, #218844, #24a54f);
     border-radius: 20px;
     padding: 20px;
 }
