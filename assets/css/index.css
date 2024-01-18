@@ -144,7 +144,8 @@ a {
     flex-direction: column;
     gap: 20px;
 }
-.menu-lateral .menu-lateral-container .menu-lateral-list li {
+.menu-lateral .menu-lateral-container .menu-lateral-list li a {
+    display: flex;
     font-size: 1.5rem;
     color: black;
     font-weight: bold;
@@ -311,7 +312,7 @@ a {
         width: 150px;
     }
     .navbar .navbar-container .title {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
     .navbar .navbar-container .list li a {
         font-size: 1rem;

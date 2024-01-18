@@ -1,0 +1,110 @@
+.over-form {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 120px 20px 40px 20px;
+}
+.over-form form {
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #5a5022;
+    box-shadow: 0 0 10px #e4d07a;
+}
+.over-form form label {
+    color: #e4d07a;
+    font-size: 1.2rem;
+}
+.over-form form input {
+    transition: 0.2s;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: 4px solid #e4d07a;
+    color: #5a5022;
+    padding: 0 20px;
+    font-size: 1.2rem;
+    outline: none;
+}
+.over-form form input:focus {
+    border: 4px solid #ff5e00;
+}
+.over-form form input::placeholder {
+    color: #5a5022;
+}
+.over-form form textarea {
+    transition: 0.2s;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    border: 4px solid #e4d07a;
+    color: #5a5022;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    outline: none;
+}
+.over-form form textarea:focus {
+    border: 4px solid #ff5e00;
+}
+.over-form form textarea::placeholder {
+    color: #5a5022;
+}
+.over-form form button {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #e4d07a;
+    color: black;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.over-form form button:hover {
+    background-color: #e4d07a;
+    color: black;
+}
+.over-form form button:focus {
+    outline: none;
+}
+.over-form form p {
+    color: #e4d07a;
+    font-size: 1.2rem;
+}
+#error {
+    animation: error 500ms forwards;
+    display: none;
+    color: #ff5e00;
+    font-size: 1.2rem;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 20px;
+    width: calc(100% - 40px);
+    max-width: 500px;
+    text-align: center;
+    background-color: #ffd6bf;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ff5e00;
+}
+#error.success {
+    color: #218844;
+    background-color: #bfe5bf;
+    box-shadow: 0 0 10px #218844;
+}
+@keyframes error {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

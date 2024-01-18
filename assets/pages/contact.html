@@ -4,23 +4,24 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Purchaseway impact</title>
-        <link rel="stylesheet" href="assets/css/index.css" />
+        <title>Contato</title>
+        <link rel="stylesheet" href="../css/index.css" />
+        <link rel="stylesheet" href="../css/contact.css" />
         <link
             rel="shortcut icon"
-            href="assets/img/image-1.png"
+            href="../img/image-1.png"
             type="image/x-icon"
         />
     </head>
     <body>
         <nav class="navbar">
             <div class="navbar-container">
-                <a href="index.html" class="title"
+                <a href="../../index.html" class="title"
                     ><div>Purchaseway Impact</div></a
                 >
                 <ul class="list">
-                    <li><a href="index.html">Ínicio</a></li>
-                    <li><a href="assets/pages/contact.html">Contato</a></li>
+                    <li><a href="../../index.html">Ínicio</a></li>
+                    <li><a href="contact.html">Contato</a></li>
                     <li><a href="#">Sobre</a></li>
                 </ul>
                 <button class="open-list">
@@ -38,23 +39,36 @@
                     <div></div>
                 </div>
                 <ul class="menu-lateral-list">
-                    <li><a href="index.html">Ínicio</a></li>
-                    <li><a href="assets/pages/contact.html">Contato</a></li>
+                    <li><a href="../../index.html">Ínicio</a></li>
+                    <li><a href="contact.html">Contato</a></li>
                     <li><a href="#">Sobre</a></li>
                 </ul>
             </div>
             <div class="menu-lateral-over"></div>
         </section>
 
-        <div class="over-produto">
-            <section class="produto"></section>
-        </div>
+        <div id="error"></div>
+
+        <section class="over-form">
+            <form id="contact-form">
+                <label for="nome">Nome</label>
+                <input type="text" placeholder="Nome" id="nome" />
+                <label for="email">Email</label>
+                <input type="email" placeholder="Email" id="email" />
+                <label for="assunto">Assunto</label>
+                <input type="text" placeholder="Assunto" id="assunto" />
+                <label for="mensagem">Mensagem</label>
+                <textarea placeholder="Mensagem" id="mensagem"></textarea>
+                <button>Enviar</button>
+            </form>
+        </section>
 
         <footer class="rodape">
             <h1>Purchaseway impact</h1>
             <div>Copyright 2022</div>
         </footer>
 
-        <script src="assets/JS/index.js"></script>
+        <script src="../JS/index.js"></script>
+        <script src="../JS/contact.js"></script>
     </body>
 </html>
