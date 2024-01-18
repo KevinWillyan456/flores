@@ -10,15 +10,23 @@ body {
 }
 a {
     text-decoration: none;
+    color: inherit;
 }
 .titulo {
     width: 100%;
 }
-.titulo div{
+.titulo div {
     width: 80%;
     color: white;
     font-size: 2rem;
-    background-image: linear-gradient(270deg, #131e1d 0, #0c1312 25%, #000000 50%, #000000 75%, #000000 100%);
+    background-image: linear-gradient(
+        270deg,
+        #131e1d 0,
+        #0c1312 25%,
+        #000000 50%,
+        #000000 75%,
+        #000000 100%
+    );
     margin: auto;
     text-align: center;
     padding: 20px 0;
@@ -27,8 +35,10 @@ a {
 /* Navbar */
 
 .navbar {
+    position: fixed;
+    top: 0;
     width: 100%;
-    background-color: rgb(255, 255, 167);
+    background-image: linear-gradient(90deg, #ffffa7, #e68517);
     color: white;
 }
 .navbar .navbar-container {
@@ -42,13 +52,12 @@ a {
 .navbar .navbar-container .title {
     font-size: 1.5rem;
     background-color: rgb(228, 208, 122);
+    color: black;
     font-weight: bold;
     padding: 20px;
     cursor: pointer;
     border-radius: 15px;
-}
-.navbar .navbar-container .title a {
-    color: black;
+    border: 2px solid black;
 }
 .navbar .navbar-container .list {
     list-style-type: none;
@@ -76,7 +85,7 @@ a {
     grid-template-columns: repeat(3, 1fr);
     gap: 100px;
     background-color: rgba(0, 0, 0, 0.3);
-    padding: 40px 80px;
+    padding: 120px 80px 40px 80px;
 }
 .produto .conteiner {
     background-color: rgba(255, 255, 255, 0.1);
@@ -88,7 +97,7 @@ a {
     flex-direction: column;
 }
 .produto .conteiner .desc {
-    background-image: linear-gradient(rgb(30, 255, 60), rgb(100, 223, 100));
+    background-image: linear-gradient(#1eff3c, #64df64);
     display: flex;
     width: 100%;
     align-items: center;
@@ -98,6 +107,9 @@ a {
     font-size: 1.1rem;
     font-weight: bold;
     justify-content: center;
+    overflow: hidden;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 .produto img {
     width: 200px;
@@ -122,9 +134,7 @@ a {
 }
 .rodape div {
     font-size: 1.1rem;
-
 }
-
 
 /* Compra */
 
@@ -153,13 +163,35 @@ a {
 .buy p {
     color: white;
     font-size: 3rem;
-    background-color: rgb(33, 136, 68);
+    background-color: #218844;
     border-radius: 20px;
     padding: 20px;
 }
 
+.open-list {
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-color: #e4d07a;
+    border-radius: 10px;
+    padding: 5px;
+    overflow: hidden;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 10px;
+}
+.open-list div {
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    border-radius: 5px;
+}
+
 /* Responsivo */
-@media(max-width: 1300px){
+@media (max-width: 1300px) {
     .produto {
         grid-template-columns: repeat(2, 1fr);
         gap: 100px;
@@ -169,7 +201,7 @@ a {
         font-size: 1.6rem;
     }
 }
-@media(max-width: 800px){
+@media (max-width: 800px) {
     .produto {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -178,17 +210,15 @@ a {
         max-width: 300px;
         font-size: 1.2rem;
     }
-    .navbar .navbar-container {
-        flex-direction: column;
-    }
-    .navbar .navbar-container .title {
-        margin-bottom: 20px;
-    }
     .navbar .navbar-container .list {
         margin-bottom: 20px;
+        display: none;
+    }
+    .open-list {
+        display: flex;
     }
 }
-@media(max-width: 400px){
+@media (max-width: 400px) {
     .produto img {
         width: 150px;
     }
